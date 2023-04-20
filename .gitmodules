@@ -1,0 +1,3 @@
+[submodule "planner"]
+	path = planner
+	url = git@github.com:applied-ai-lab/planner.git
