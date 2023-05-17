@@ -17,8 +17,8 @@ There are two options for installing and running the simulation, (1) locally, or
 
 1. Clone this repository
 ```
-git clone --recursive --branch main git@github.com:applied-ai-lab/RAMP-SIM.git
-cd RAMP-SIM
+git clone --recursive --branch main git@github.com:applied-ai-lab/ramp-sim.git
+cd ramp-sim
 git submodule update --init --recursive
 ```
 2. Install Nvidia Isaac locally following the guide [here](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_workstation.html)
@@ -28,8 +28,8 @@ git submodule update --init --recursive
 
 1. Clone this repository
 ```
-git clone --recursive --branch main git@github.com:applied-ai-lab/RAMP-SIM.git
-cd RAMP-SIM
+git clone --recursive --branch main git@github.com:applied-ai-lab/ramp-sim.git
+cd ramp-sim
 git submodule update --init --recursive
 ```
 2. Follow the guide to install the containerised Nvidia Isaac from [here](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_container.html)
@@ -45,19 +45,17 @@ For convenience there is a scripts/simple_assembly.py that demonstrates how to u
 ### Locally
 
 ```
-/$USER/pkg/isaac_sim-2022.2.1/python.sh scripts/main.py --assembly assembly_easy_2.xml
+/home/$USER/pkg/isaac_sim-2022.2.1/python.sh scripts/main.py --assembly assembly_easy_2.xml
 ```
 
 ### Docker
 
 ```
+./docker/run_docker.sh
 /isaac-sim/python.sh scripts/main.py --assembly assembly_easy_2.xml
 ```
 
 
-## Extension
-
-There are many possible extensions to be made to improve upon the baseline method but first it is recommended to install and run this baseline approach. Once you have the baseline running choose a current limitation whether that is the current skill implementation, planner or something else and start making improvments. 
 
 
 ## Simulation environment improvements to be made
@@ -75,11 +73,16 @@ There are many possible extensions to be made to improve upon the baseline metho
 
 ## Cite
 
-An arXiv paper is available at [https://arxiv.org/](https://arxiv.org/), and can be cited with the following bibtex entry:
+An arXiv paper is available [here](https://arxiv.org/abs/2305.09644), and can be cited with the following bibtex entry:
 
 ```
-@misc{
-
+@misc{collins2023ramp,
+      title={RAMP: A Benchmark for Evaluating Robotic Assembly Manipulation and Planning}, 
+      author={Jack Collins and Mark Robson and Jun Yamada and Mohan Sridharan and Karol Janik and Ingmar Posner},
+      year={2023},
+      eprint={2305.09644},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
 }
 ```
 
