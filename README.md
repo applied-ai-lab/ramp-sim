@@ -1,5 +1,5 @@
 # RAMP - Sim: A Benchmark for Evaluating Robotic Assembly Manipulation and Planning
-A repository containing the simulation component of the RAMP benchmark
+A repository containing the simulation component of the [RAMP benchmark](https://sites.google.com/oxfordrobotics.institute/ramp).
 
 ![Teaser figure](./media/simulation.png)
 
