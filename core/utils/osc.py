@@ -304,7 +304,7 @@ class OperationalSpaceController(object):
             # relative orientation based on difference between current ori and ref
             self.relative_ori = orientation_error(quat2mat(ee_pose[3:7]), self.ori_ref)
 
-            ori_error = self.interpolator_ori.get_interpolated_goal()
+            ori_error = self.interpolator_ori.get_interpolated_goal() - self.relative_ori
         else:
             desired_ori = np.array(self.goal_ori)
             ori_error = orientation_error(desired_ori, quat2mat(x_quat(ee_pose[3:7])))
